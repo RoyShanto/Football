@@ -1,0 +1,102 @@
+/* Font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Conmebol Copa America 2021 style */
+.container{
+    /* width: 1440px; */
+    width: 100%;
+    height: 677px;
+    background: #2D25A0;
+    display: flex;
+    margin-bottom: 70px;
+}
+.first-section{
+    padding: 207px 102px 240px 156px;
+    width: 485px;
+}
+.section-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.section-image img{
+    width: 556px;
+    height: 438px;
+    padding: 135px 140px 114px 100px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #E02C6D;
+    color: white;
+}
+.left-arrow{
+padding-left: 8px;
+}
+/* players style*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+    margin-right: 180px;
+    /* display: flex; */
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 27px;
+}
+.player img{
+    width: 100%;
+}
+/* highlight style */
+.highlights-section{
+    margin-top: 138px;
+    margin-left: 180px;
+    display: flex;
+    margin-bottom: 158px;
+    /* margin-right: 180px; */
+}
+.highlights-info{
+    width: 469px;
+    margin-right: 120px;
+    padding-top: 59px;
+    font-family: Poppins;
+    
+}
+.highlights-title{
+    
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+.highlights-text{
+    margin-top: 0px;
+}
+.highlight-image img{
+    width: 567px;
+    height: 427px;
+}
+/* Logo-section Style */
+.logi-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.icon{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.social-link a{
+
+}
