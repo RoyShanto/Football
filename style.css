@@ -26,8 +26,13 @@
     width: 556px;
     height: 438px;
     padding: 135px 140px 114px 100px;
+    overflow: hidden;
 }
-a{
+.section-image img:hover{
+transform: scale(1.05);
+transition: transform 1s ease-in-out 0.1s;
+}
+.first-section a, .highlights-info a{
     text-decoration: none;
     padding: 10px 30px;
     background: #E02C6D;
@@ -51,6 +56,12 @@ padding-left: 8px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
     margin-bottom: 27px;
+    overflow: hidden;
+}
+.player:hover{
+    transform: scale(1.001);
+    transition: transform 1s;
+    border: 1px solid rgba(255, 0, 0, 0.418);
 }
 .player img{
     width: 100%;
@@ -60,7 +71,7 @@ padding-left: 8px;
     margin-top: 138px;
     margin-left: 180px;
     display: flex;
-    margin-bottom: 158px;
+    margin-bottom: 120px;
     /* margin-right: 180px; */
 }
 .highlights-info{
@@ -83,11 +94,82 @@ padding-left: 8px;
     width: 567px;
     height: 427px;
 }
+/* Store Style */
+.store{
+    margin-left: 180px;
+    margin-right: 140px;
+    margin-bottom: 100px;
+}
+.store-title h1{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 35px;
+    color: #E3B01F
+}
+.sharts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.shart{
+    width: 330px;
+}
+.shart:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 255, 128, 0.5);
+    /* border: 1px solid rgba(128, 128, 128, 0.507) */
+}
+.shart img{
+    width: 100%;
+}
+.bu{
+    position: relative;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+.bu a{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #E02C6D;
+    color: white;
+    font-family: Poppins;
+    border-radius: 50px;
+    margin-top: -22px;
+}
+.bu a:hover{
+    border: 2px solid lightgreen
+}
+/* Fans Tour Style */
+.fans-tour-section{
+    margin-bottom: 50px;
+}
+.fans-tour{
+    display: flex;
+    justify-content: space-evenly
+}
+.fans-tour-section img{
+    width: 600px;
+    height:450px;
+}
+/* Never Walk style */
+.never-walk{
+    /* font-family: Poppins; */
+    font-size: 40px;
+    text-align: center;
+    color: gray;
+}
+.red-cup img{
+    width: 100%;
+}
+
 /* Logo-section Style */
-.logi-section{
+.logo-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 65px;
 }
 .logo img{
     width: 483.87px;
@@ -98,5 +180,5 @@ padding-left: 8px;
     margin-right: 14px;
 }
 .social-link a{
-
+    
 }
