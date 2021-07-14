@@ -3,9 +3,8 @@
 
 /* Conmebol Copa America 2021 style */
 .container{
-    /* width: 1440px; */
     width: 100%;
-    height: 677px;
+    /* height: 677px; */
     background: #2D25A0;
     display: flex;
     margin-bottom: 70px;
@@ -41,13 +40,14 @@ transition: transform 1s ease-in-out 0.1s;
 .left-arrow{
 padding-left: 8px;
 }
+
+
 /* players style*/
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 180px;
     margin-right: 180px;
-    /* display: flex; */
 }
 .player{
     width: 330px;
@@ -82,6 +82,8 @@ font-size: 16px;
 line-height: 26px;
 color: #6C6C6C;
 }
+
+
 /* highlight style */
 .highlights-section{
     margin-top: 138px;
@@ -210,6 +212,76 @@ color: #6C6C6C;
     margin-left: 14px;
     margin-right: 14px;
 }
-.social-link a{
-    
+
+
+
+
+/* Media Queries */
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+.container{
+    display: block;
+}
+.first-section{
+    padding: 112px 0px 124px 16px;
+    width: 100%;
+}
+.section-title{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    width: 278px;
+    height: 138px;
+}
+.section-image img{
+    padding: 0px 16px 61px 15px;
+    width: 329px;
+    height: 259.17px;
+}
+
+
+.players{
+    /* display: none; */
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.player{
+    margin-bottom: 24px;
+}
+.highlights-section{
+    display: none;
+}
+.store{
+    display: none;
+}
+.fans-tour-section{
+    display: none;
+}
+.never-walk-section{
+    display: none;
+}
+
+
+.logo-section{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding-left: 71px;
+    padding-right: 71px;
+    /* width: 100%; */
+}
+.logo img{
+    width: 100%;
+    height: 60px;
+}
+.icon{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+/* Tablat Device */
+@media only screen and (min-width:688px) and (max-width:992px){
+
 }
