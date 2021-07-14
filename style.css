@@ -68,19 +68,18 @@ padding-left: 8px;
 }
 .player h2{
     font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 28px;
-line-height: 40px;
-color: #18191F;
+    /* font-weight: bold; */
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
 }
 .player p{
     font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-color: #6C6C6C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
 }
 
 
@@ -146,12 +145,12 @@ color: #6C6C6C;
 .shart img{
     width: 100%;
 }
-.bu{
+.view-button{
     position: relative;
     padding-top: 30px;
     padding-right: 60px;
 }
-.bu a{
+.view-button a{
     position: absolute;
     top: 100%;
     left: 40%;
@@ -163,7 +162,7 @@ color: #6C6C6C;
     border-radius: 50px;
     margin-top: -22px;
 }
-.bu a:hover{
+.view-button a:hover{
     border: 2px solid lightgreen
 }
 /* Fans Tour Style */
@@ -217,118 +216,211 @@ color: #6C6C6C;
 /* Media Queries */
 /* Mobile Device */
 @media only screen and (max-width:688px) {
-.container{
-    display: block;
-}
-.first-section{
-    padding: 112px 0px 124px 16px;
-    width: 100%;
-}
-.section-title{
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 50px;
-    width: 278px;
-    height: 138px;
-}
-.section-image img{
-    padding: 0px 16px 61px 15px;
-    width: 329px;
-    height: 259.17px;
+    .container{
+        display: block;
+    }
+    .first-section{
+        padding: 112px 0px 124px 16px;
+        width: 100%;
+    }
+    .section-title{
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+        height: 138px;
+    }
+    .section-image img{
+        padding: 0px 16px 61px 15px;
+        width: 329px;
+        height: 259.17px;
+    }
+    /* Players */
+    .players{
+        /* display: none; */
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .player{
+        margin-bottom: 24px;
+    }
+
+    /* Highlights */
+    .highlights-section{
+        margin: 0px 15px 50px 15px;
+        flex-direction: column;
+    }
+    .highlights-info{
+        width: 329px;
+        margin-bottom: 29px;
+        padding-top: 0px;
+    }
+    .highlights-title{
+        font-size: 30px;
+    }
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+    }
+    /* Sotre */
+    .store{
+        margin: 0px 15px 0px 15px;
+        padding-bottom: 30px;
+    }
+    .store-title h1{
+        font-size: 25px;
+    }
+    .sharts{
+        display: block
+    }
+    .view-button{
+        padding: 10px 0px;
+    }
+    .view-button a{
+        top: 55%;
+        left: 30%;
+        padding: 8px 30px;
+    margin-bottom: 30px;
+    }
+
+    /* Fans Tour Style */
+    .fans-tour{
+        display: block;
+        margin-bottom: -30px;
+    }
+    .fans-tour-section img{
+        width: 400px;
+        height:400px;
+    }
+    .fans, .tour{
+        margin-bottom: 10px;
+    }
+
+    /* Never Walk style */
+    .never-walk{
+        font-size: 11px;
+    }
+
+    /* Logo Section Style */
+    .logo-section{
+        padding-left: 71px;
+        padding-right: 71px;
+    }
+    .logo img{
+        width: 100%;
+        height: 60px;
+    }
+    .icon{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
 }
 
+/* Tablet Device */
+@media only screen and (min-width:689px) and (max-width:1020px){
+    .container{
+        /* display: block; */
+    }
+    .first-section{
+        padding: 112px 0px 124px 16px;
+        width: 100%;
+    }
+    .section-title{
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+        height: 138px;
+    }
+    .section-image img{
+        padding: 70px 16px 61px 15px;
+        width: 329px;
+        height: 259.17px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .player{
+        margin-bottom: 24px;
+    }
+    /* Highlights */
+    .highlights-section{
+        margin: 40px 15px 50px 15px;
+    }
+    .highlights-info{
+        width: 329px;
+        margin-right: 43px;
+        margin-bottom: 29px;
+        padding-top: 0px;
+    }
+    .highlights-title{
+        font-size: 28px;
+    }
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+    }
+    /* Sotre */
+    .store{
+        margin: 0px 15px 0px 15px;
+        padding-bottom: 30px;
+    }
+    .store-title h1{
+        font-size: 35px;
+    }
+    .sharts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shart{
+        margin-bottom: 10px;
+    }
+    .view-button{
+        padding: 10px 0px;
+    }
+    .view-button a{
+        top: 55%;
+        left: 37%;
+        padding: 8px 30px;
+        margin-bottom: 30px;
+    }
 
-.players{
-    /* display: none; */
-    display: block;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.player{
-    margin-bottom: 24px;
-}
+    /* Fans Tour Style */
+    .fans-tour{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: -30px;
+    }
+    .fans-tour-section img{
+        width: 355px;
+        height:355px;
+    }
+    .fans, .tour{
+        margin-bottom: 10px;
+    }
+    /* Never Walk style */
+    .never-walk{
+        font-size: 22px;
+    }
 
-
-/* Highlights */
-.highlights-section{
-    margin: 0px 15px 50px 15px;
-    flex-direction: column;
-}
-.highlights-info{
-    width: 329px;
-    margin-bottom: 29px;
-    padding-top: 0px;
-}
-.highlights-title{
-    font-size: 30px;
-}
-.highlight-image img{
-    width: 328px;
-    height: 248px;
-}
-/* Sotre */
-.store{
-    margin: 0px 15px 0px 15px;
-    padding-bottom: 30px;
-}
-.store-title h1{
-    font-size: 25px;
-}
-.sharts{
-    display: block
-}
-.bu{
-    /* position: relative; */
-    /* padding-top: 10px;
-    padding-right: 0px; */
-    padding: 10px 0px;
-}
-.bu a{
-    top: 55%;
-    left: 30%;
-    padding: 8px 30px;
-margin-bottom: 30px;
-}
-
-/* Fans Tour Style */
-.fans-tour{
-    display: block;
-    margin-bottom: -30px;
-}
-.fans-tour-section img{
-    width: 400px;
-    height:400px;
-}
-.fans, .tour{
-    margin-bottom: 10px;
-}
-
-/* Never Walk style */
-.never-walk{
-    font-size: 11px;
-}
-
-
-
-
-/* Logo Section Style */
-.logo-section{
-    padding-left: 71px;
-    padding-right: 71px;
-}
-.logo img{
-    width: 100%;
-    height: 60px;
-}
-.icon{
-    margin-left: 7px;
-    margin-right: 7px;
-}
-
-
-
-/* Tablat Device */
-@media only screen and (min-width:688px) and (max-width:992px){
-
+    /* Logo Section Style */
+    .logo-section{
+        padding-left: 71px;
+        padding-right: 71px;
+    }
+    .logo img{
+        width: 100%;
+        height: 70px;
+    }
+    .icon{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
