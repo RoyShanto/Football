@@ -96,11 +96,9 @@ color: #6C6C6C;
     width: 469px;
     margin-right: 120px;
     padding-top: 59px;
-    font-family: Poppins;
-    
+    font-family: Poppins; 
 }
 .highlights-title{
-    
     font-weight: bold;
     font-size: 48px;
     margin-bottom: 0px;
@@ -250,36 +248,85 @@ color: #6C6C6C;
 .player{
     margin-bottom: 24px;
 }
+
+
+/* Highlights */
 .highlights-section{
-    display: none;
+    margin: 0px 15px 50px 15px;
+    flex-direction: column;
 }
+.highlights-info{
+    width: 329px;
+    margin-bottom: 29px;
+    padding-top: 0px;
+}
+.highlights-title{
+    font-size: 30px;
+}
+.highlight-image img{
+    width: 328px;
+    height: 248px;
+}
+/* Sotre */
 .store{
-    display: none;
+    margin: 0px 15px 0px 15px;
+    padding-bottom: 30px;
 }
-.fans-tour-section{
-    display: none;
+.store-title h1{
+    font-size: 25px;
 }
-.never-walk-section{
-    display: none;
+.sharts{
+    display: block
+}
+.bu{
+    /* position: relative; */
+    /* padding-top: 10px;
+    padding-right: 0px; */
+    padding: 10px 0px;
+}
+.bu a{
+    top: 55%;
+    left: 30%;
+    padding: 8px 30px;
+margin-bottom: 30px;
+}
+
+/* Fans Tour Style */
+.fans-tour{
+    display: block;
+    margin-bottom: -30px;
+}
+.fans-tour-section img{
+    width: 400px;
+    height:400px;
+}
+.fans, .tour{
+    margin-bottom: 10px;
+}
+
+/* Never Walk style */
+.never-walk{
+    font-size: 11px;
 }
 
 
+
+
+/* Logo Section Style */
 .logo-section{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
     padding-left: 71px;
     padding-right: 71px;
-    /* width: 100%; */
 }
 .logo img{
     width: 100%;
     height: 60px;
 }
 .icon{
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
+
+
 
 /* Tablat Device */
 @media only screen and (min-width:688px) and (max-width:992px){
